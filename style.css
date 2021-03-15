@@ -1,0 +1,20 @@
+
+h1 {
+    font-family: 'Redressed', cursive;
+    font-size: 120%;
+    color: blue;
+}
+.menu a {
+    color: black;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu a:hover {
+    color: red;
+    background-color: white;
+}
+.menu a.active {
+    text-decoration: underline;
+}
