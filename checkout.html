@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Ugliest store ever</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/shop-homepage.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-light">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Ugliest store ever</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="index.html"
+                ><button type="button" class="btn btn-primary">
+                  Tillbaka
+                </button></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="checkout-cart container my-5">
+      <div class="checkout-cart-body">
+        <ul class="list-group list-group-horizontal text-center">
+          <li class="list-group-item col-6 text-start"><h5>Produkt</h5></li>
+          <li class="list-group-item col-2"><h5>Styckpris</h5></li>
+          <li class="list-group-item col-2"><h5>Antal</h5></li>
+          <li class="list-group-item col-2"><h5>Total</h5></li>
+        </ul>
+
+        <div class="list-group">
+          <div id="checkout-output"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order form -->
+    <div class="container mb-5">
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">Förnamn</label>
+          <input type="text" class="form-control" id="firstname" required />
+          <div class="invalid-feedback" id="invalid-firstname">Ange förnamn</div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Efternamn</label>
+          <input type="text" class="form-control" id="lastname" required />
+          <div class="invalid-feedback" id="invalid-lastname">Ange efternamn</div>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-post</label>
+          <input type="email" class="form-control" id="email" required />
+          <div class="invalid-feedback" id="invalid-email">Ogiltig e-post</div>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Telefon</label>
+          <input type="tel" class="form-control" id="phone" required />
+          <div class="invalid-feedback" id="invalid-phone">Ogiltigt nummer</div>
+        </div>
+        <div class="col-12">
+          <label for="address" class="form-label">Adress</label>
+          <input type="text" class="form-control" id="address" required />
+          <div class="invalid-feedback" id="invalid-address">Ange gatuadress</div>
+        </div>
+        <div class="col-md-6">
+          <label for="zipcode" class="form-label">Postnummer</label>
+          <input type="text" class="form-control" id="zipcode" required />
+          <div class="invalid-feedback" id="invalid-zipcode">Ogiltigt postnummer</div>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">Postort</label>
+          <input type="text" class="form-control" id="city" required />
+          <div class="invalid-feedback" id="invalid-city">Ogiltig postort</div>
+        </div>
+        <div class="col-12">
+          <button type="button" class="btn btn-primary" id="submit-button">Bekräfta order</button>
+        </div>
+      </form>
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <script src="script.js"></script>
+    <script src="checkout.js"></script>
+  </body>
+</html>
